@@ -8,6 +8,8 @@
 TEST(Currency, testMultiplication)
 {
     auto fiveDollars = std::make_unique<Dollar>(5);
-    fiveDollars->times(2);
-    EXPECT_EQ(fiveDollars->amount, 10);
+    Dollar product = fiveDollars->times(2);
+    EXPECT_EQ(product.amount, 10);
+    product = fiveDollars->times(3);
+    EXPECT_EQ(product.amount, 15);
 }

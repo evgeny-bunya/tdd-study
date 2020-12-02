@@ -9,9 +9,9 @@ public:
     {
 
     }
-    void times(int multiplicator)
+    Dollar times(int multiplicator)
     {
-        amount *= multiplicator;
+        return Dollar(amount * multiplicator);
     }
     int amount;
 
