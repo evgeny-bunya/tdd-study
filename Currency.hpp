@@ -13,6 +13,10 @@ public:
     {
         return Dollar(amount * multiplicator);
     }
+    bool isEqual(const Dollar& compare)
+    {
+        return (amount == compare.amount);
+    }
     int amount;
 
 };
